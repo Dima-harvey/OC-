@@ -1,0 +1,10 @@
+CPP=g++
+PROGRAM_NAME=7
+SOURCE_FILES=7.cpp
+
+$(PROGRAM_NAME): $(SOURCE_FILES) 
+	$(CPP) $^ -o $@
+	./$(PROGRAM_NAME)
+	
+start:
+	./$(PROGRAM_NAME) 

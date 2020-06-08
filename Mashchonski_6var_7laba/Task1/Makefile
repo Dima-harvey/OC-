@@ -1,0 +1,10 @@
+CPP=g++
+PROGRAM_NAME=Task
+SOURCE_FILES=Task1.cpp
+
+$(PROGRAM_NAME): $(SOURCE_FILES) 
+	$(CPP) $^ -o $@
+	./$(PROGRAM_NAME)
+	
+start:
+	./$(PROGRAM_NAME) 
